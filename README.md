@@ -19,7 +19,6 @@ This package provides a comprehensive starting point for creating PHP packages w
 - 📏 **Rector:dry-run** safe code refactoring
 - 🎨 **Laravel Pint** code formatting
 - 🚀 **GitHub Actions** CI/CD workflow
-- 🗂️ **Service Provider** template
 
 ## Requirements
 
@@ -67,7 +66,7 @@ composer refactor:dry-run
 ## What's Included
 
 - **src/** - Your package source code
-- **src/ServiceProvider.php** - Example service provider
+- **src/ExampleClass.php** - Example class file
 - **tests/ExampleTest.php** - Example test file
 - **composer.json** - Dependencies and scripts configured
 - **phpstan.neon** - Static analysis configuration
