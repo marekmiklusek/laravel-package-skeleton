@@ -10,13 +10,18 @@ This package provides a comprehensive starting point for creating Laravel packag
 
 ## Features
 
-- 🧪 **Pest** testing framework with Feature/Unit structure
+- 🧪 **Pest** the Best PHP Testing Framework
 - 🔍 **PHPStan (Larastan)** static analysis for Laravel
 - 🔧 **Rector** automated code refactoring and upgrades
+- 📏 **Rector:dry-run** safe code refactoring
 - 🎨 **Laravel Pint** code formatting
 - 🚀 **GitHub Actions** CI/CD workflow
-- 📁 **PSR-4** autoloading structure
 - 🗂️ **Service Provider** template
+
+## Requirements
+
+- PHP 8.3+
+- Laravel 12.17+
 
 ## Installation
 
@@ -32,59 +37,41 @@ This will create a new directory `MyAwesomePackage` with all the skeleton files 
 
 After creating your package, you can use these commands:
 
+Pest Testing:
 ```bash
-# Run tests
 composer test
+```
 
-# Static analysis
+PHPStan Analysis:
+```bash
 composer analyse
+```
 
-# Code formatting
+Laravel Pint Formatting:
+```bash
 composer format
+```
 
-# Automated refactoring
+Rector Refactoring:
+```bash
 composer refactor
+```
+
+Dry Run Refactoring (safe):
+```bash
+composer refactor:dry-run
 ```
 
 ## What's Included
 
 - **src/** - Your package source code
-- **tests/Feature/** - Feature tests directory
-- **tests/Unit/** - Unit tests directory
+- **src/ServiceProvider.php** - Example service provider
+- **tests/ExampleTest.php** - Example test file
 - **composer.json** - Dependencies and scripts configured
 - **phpstan.neon** - Static analysis configuration
 - **rector.php** - Code refactoring rules
 - **pint.json** - Code style configuration
 - **.github/workflows/ci.yml** - GitHub Actions workflow
-- **Service Provider** - Laravel service provider template
-
-## Requirements
-
-- PHP 8.3+
-- Laravel 12.17+
-
-## Testing
-
-```bash
-composer test
-```
-
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-## Security Vulnerabilities
-
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
-
-## Credits
-
-- [Marek Miklusek](https://github.com/marekmiklusek)
-- [All Contributors](../../contributors)
 
 ## License
 

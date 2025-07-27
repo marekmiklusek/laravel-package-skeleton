@@ -41,8 +41,9 @@
         "test": [
             "./vendor/bin/pest"
         ],
-        "format": "pint",
-        "analyse": "phpstan analyse",
-        "refactor": "rector process"
+        "format": "./vendor/bin/pint",
+        "analyse": "./vendor/bin/phpstan analyse --memory-limit=1G",
+        "refactor": "./vendor/bin/rector",
+        "refactor:dry-run": "./vendor/bin/rector --dry-run"
     }
 }
