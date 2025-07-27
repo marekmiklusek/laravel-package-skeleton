@@ -1,6 +1,3 @@
-![Create a logo for a PHP package skeleton_ a minimalist design, featuring a stylized skeletal structure representing a PHP file, rendered in vector format, utilizing a dark blue and light gray color palette, with a clean s](https://github.com/user-attachments/assets/5432dd9e-924d-418c-a9fa-2d9c648e27c0)
-
-
 ![Create a logo for a PHP package skeleton_ a minimalist design, featuring a stylized skeletal structure representing a PHP file, rendered in vector format, utilizing a dark blue and light gray color palette, with a clean s-2](https://github.com/user-attachments/assets/3786fd45-fbd3-4a95-8b0f-a1721344a22c)
 
 <p align="center">
