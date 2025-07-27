@@ -21,7 +21,7 @@ This package provides a comprehensive starting point for creating Laravel packag
 ## Requirements
 
 - PHP 8.3+
-- Laravel 12.17+
+- Laravel 12.21+
 
 ## Installation
 
