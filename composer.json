@@ -40,6 +40,9 @@
     "scripts": {
         "test": [
             "./vendor/bin/pest"
-        ]
+        ],
+        "format": "pint",
+        "analyse": "phpstan analyse",
+        "refactor": "rector process"
     }
 }
