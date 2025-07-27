@@ -1,8 +1,11 @@
 # Laravel Package Skeleton
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/marekmiklusek/package-skeleton.svg?style=flat-square)](https://packagist.org/packages/marekmiklusek/package-skeleton)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/marekmiklusek/package-skeleton/run-tests?label=tests)](https://github.com/marekmiklusek/package-skeleton/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/marekmiklusek/package-skeleton.svg?style=flat-square)](https://packagist.org/packages/marekmiklusek/package-skeleton)
+<p align="center">
+  <a href="https://github.com/marekmiklusek/package-skeleton/actions"><img src="https://github.com/marekmiklusek/package-skeleton/actions/workflows/ci.yaml/badge.svg" alt="CI Pipeline"></a>
+  <a href="https://packagist.org/packages/marekmiklusek/package-skeleton"><img src="https://img.shields.io/packagist/v/marekmiklusek/package-skeleton.svg" alt="Latest Stable Version"></a>
+  <a href="https://packagist.org/packages/marekmiklusek/package-skeleton"><img src="https://img.shields.io/packagist/dt/marekmiklusek/package-skeleton.svg" alt="Downloads"></a>
+  <a href="https://github.com/marekmiklusek/package-skeleton/blob/main/LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+</p>
 
 🏗️ **Modern Laravel package skeleton with development tools pre-configured.**
 
