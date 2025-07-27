@@ -1,7 +1,7 @@
 {
     "name": "marekmiklusek/package-skeleton",
-    "description": "A skeleton for creating Laravel packages",
-    "type": "library",
+    "description": "A skeleton for creating new Laravel packages.",
+    "keywords": ["php", "laravel", "package", "skeleton"],
     "license": "MIT",
     "authors": [
         {
@@ -10,15 +10,14 @@
         }
     ],
     "require": {
-        "php": "^8.3",
-        "laravel/framework": "^12.17"
+        "php": "^8.4.0",
+        "laravel/framework": "^12.17.0"
     },
     "require-dev": {
-        "laravel/pint": "^1.22",
-        "larastan/larastan": "^3.4",
-        "rector/rector": "^2.0",
-        "pestphp/pest": "^3.8",
-        "orchestra/testbench": "^8.0"
+        "laravel/pint": "^1.22.1",
+        "larastan/larastan": "^3.4.0",
+        "rector/rector": "^2.0.17",
+        "pestphp/pest": "^3.8"
     },
     "autoload": {
         "psr-4": {
@@ -27,22 +26,20 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "MarekMiklusek\\PackageSkeleton\\Tests\\": "tests/"
+            "Tests\\": "tests/"
         }
     },
-    "scripts": {
-        "test": "vendor/bin/pest",
-        "test-coverage": "vendor/bin/pest --coverage",
-        "format": "vendor/bin/pint",
-        "analyse": "vendor/bin/phpstan analyse",
-        "refactor": "vendor/bin/rector process"
-    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "config": {
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "scripts": {
+        "test": [
+            "./vendor/bin/pest"
+        ]
+    }
 }

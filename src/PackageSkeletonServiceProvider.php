@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace MarekMiklusek\SkeletonPackage;
+namespace MarekMiklusek\PackageSkeleton;
 
 use Illuminate\Support\ServiceProvider;
 
-final class SkeletonServiceProvider extends ServiceProvider
+final class PackageSkeletonServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
