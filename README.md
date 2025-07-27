@@ -14,7 +14,7 @@ This package provides a comprehensive starting point for creating PHP packages w
 ## Features
 
 - 🧪 **Pest** the Best PHP Testing Framework
-- 🔍 **PHPStan (Larastan)** static analysis for PHP
+- 🔍 **PHPStan** static analysis for PHP
 - 🔧 **Rector** automated code refactoring and upgrades
 - 📏 **Rector:dry-run** safe code refactoring
 - 🎨 **Laravel Pint** code formatting
