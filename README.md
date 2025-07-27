@@ -14,7 +14,7 @@ This package provides a comprehensive starting point for creating PHP packages w
 ## Features
 
 - 🧪 **Pest** the Best PHP Testing Framework
-- 🔍 **PHPStan** static analysis for PHP
+- 🔍 **PHPStan (Larastan)** static analysis for PHP
 - 🔧 **Rector** automated code refactoring and upgrades
 - 📏 **Rector:dry-run** safe code refactoring
 - 🎨 **Laravel Pint** code formatting
@@ -23,6 +23,7 @@ This package provides a comprehensive starting point for creating PHP packages w
 ## Requirements
 
 - PHP 8.3+
+- Laravel 12.21+
 
 ## Installation
 
@@ -43,12 +44,12 @@ Pest Testing:
 composer test
 ```
 
-PHPStan Analysis:
+PHPStan (Larastan) Static Analysis:
 ```bash
 composer analyse
 ```
 
-PHP Pint Formatting:
+Laravel Pint Formatting:
 ```bash
 composer format
 ```
@@ -66,7 +67,7 @@ composer refactor:dry-run
 ## What's Included
 
 - **src/** - Your package source code
-- **src/ExampleClass.php** - Example class file
+- **src/PackageSkeletonServiceProvider.php** - Service provider for your package
 - **tests/ExampleTest.php** - Example test file
 - **composer.json** - Dependencies and scripts configured
 - **phpstan.neon** - Static analysis configuration

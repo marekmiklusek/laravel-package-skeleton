@@ -1,7 +1,7 @@
 {
     "name": "marekmiklusek/package-skeleton",
     "description": "A skeleton for creating new PHP packages.",
-    "keywords": ["php", "package", "skeleton"],
+    "keywords": ["php", "laravel", "package", "skeleton"],
     "license": "MIT",
     "authors": [
         {
@@ -10,11 +10,12 @@
         }
     ],
     "require": {
-        "php": "^8.3.0"
+        "php": "^8.3.0",
+        "laravel/framework": "^12.21.0"
     },
     "require-dev": {
         "laravel/pint": "^1.24.0",
-        "phpstan/phpstan": "^2.1.16",
+        "larastan/larastan": "^3.6.0",
         "rector/rector": "^2.1.2",
         "pestphp/pest": "^3.8.2"
     },
@@ -41,7 +42,7 @@
             "./vendor/bin/pest"
         ],
         "format": "./vendor/bin/pint",
-        "analyse": "./vendor/bin/phpstan",
+        "analyse": "./vendor/bin/phpstan analyse --memory-limit=1G",
         "refactor": "./vendor/bin/rector",
         "refactor:dry-run": "./vendor/bin/rector --dry-run"
     }
