@@ -1,4 +1,4 @@
-# Laravel Package Skeleton
+# PHP Package Skeleton
 
 <p align="center">
   <a href="https://github.com/marekmiklusek/package-skeleton/actions"><img src="https://github.com/marekmiklusek/package-skeleton/actions/workflows/ci.yaml/badge.svg" alt="CI Pipeline"></a>
@@ -7,14 +7,14 @@
   <a href="https://github.com/marekmiklusek/package-skeleton/blob/main/LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
 </p>
 
-🏗️ **Modern Laravel package skeleton with development tools pre-configured.**
+🏗️ **Modern PHP package skeleton with development tools pre-configured.**
 
-This package provides a comprehensive starting point for creating Laravel packages with modern development tools already set up and configured.
+This package provides a comprehensive starting point for creating PHP packages with modern development tools already set up and configured.
 
 ## Features
 
 - 🧪 **Pest** the Best PHP Testing Framework
-- 🔍 **PHPStan (Larastan)** static analysis for Laravel
+- 🔍 **PHPStan (Larastan)** static analysis for PHP
 - 🔧 **Rector** automated code refactoring and upgrades
 - 📏 **Rector:dry-run** safe code refactoring
 - 🎨 **Laravel Pint** code formatting
@@ -24,7 +24,6 @@ This package provides a comprehensive starting point for creating Laravel packag
 ## Requirements
 
 - PHP 8.3+
-- Laravel 12.21+
 
 ## Installation
 
@@ -50,7 +49,7 @@ PHPStan Analysis:
 composer analyse
 ```
 
-Laravel Pint Formatting:
+PHP Pint Formatting:
 ```bash
 composer format
 ```
