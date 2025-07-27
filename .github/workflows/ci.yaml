@@ -21,8 +21,8 @@ jobs:
       - name: Run Laravel Pint
         run: ./vendor/bin/pint
 
-  # Run Larastan for static analysis
-  larastan:
+  # Run PHStan for static analysis
+  phpstan:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -35,8 +35,8 @@ jobs:
       - name: Install Composer dependencies
         run: composer install --prefer-dist --no-progress --no-scripts
         
-      - name: Run Larastan
-        run: ./vendor/bin/phpstan analyse --memory-limit=1G
+      - name: Run PHPStan
+        run: ./vendor/bin/phpstan
 
   # Run composer test and security audit
   tests:
