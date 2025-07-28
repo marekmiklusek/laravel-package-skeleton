@@ -1,7 +1,7 @@
 {
     "name": "marekmiklusek/package-skeleton",
-    "description": "A skeleton for creating new PHP packages.",
-    "keywords": ["php", "laravel", "package", "skeleton"],
+    "description": "A skeleton for creating new Laravel packages.",
+    "keywords": ["laravel", "php", "package", "skeleton", "laravel-package"],
     "license": "MIT",
     "authors": [
         {

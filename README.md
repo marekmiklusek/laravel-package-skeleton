@@ -7,9 +7,9 @@
   <a href="https://github.com/marekmiklusek/package-skeleton/blob/main/LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
 </p>
 
-🏗️ **Modern PHP package skeleton with development tools pre-configured.**
+🏗️ **Modern Laravel package skeleton with development tools pre-configured.**
 
-This package provides a comprehensive starting point for creating PHP packages with modern development tools already set up and configured.
+This package provides a comprehensive starting point for creating Laravel packages with modern development tools already set up and configured.
 
 ## Features
 
@@ -27,17 +27,17 @@ This package provides a comprehensive starting point for creating PHP packages w
 
 ## Installation
 
-You can create a new package using this skeleton via composer:
+You can create a new Laravel package using this skeleton via composer:
 
 ```bash
 composer create-project marekmiklusek/package-skeleton --prefer-source MyAwesomePackage
 ```
 
-This will create a new directory `MyAwesomePackage` with all the skeleton files and proper namespacing configured.
+This will create a new directory `MyAwesomePackage` with all the skeleton files and proper namespacing configured for a Laravel package.
 
 ## Usage
 
-After creating your package, you can use these commands:
+After creating your Laravel package, you can use these commands:
 
 Pest Testing:
 ```bash
@@ -66,8 +66,8 @@ composer refactor:dry-run
 
 ## What's Included
 
-- **src/** - Your package source code
-- **src/PackageSkeletonServiceProvider.php** - Service provider for your package
+- **src/** - Your Laravel package source code
+- **src/PackageSkeletonServiceProvider.php** - Service provider for your Laravel package
 - **tests/ExampleTest.php** - Example test file
 - **composer.json** - Dependencies and scripts configured
 - **phpstan.neon** - Static analysis configuration
