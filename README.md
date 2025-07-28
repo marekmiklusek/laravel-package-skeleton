@@ -1,4 +1,4 @@
-![Create a logo for a PHP package skeleton_ a minimalist design, featuring a stylized skeletal structure representing a PHP file, rendered in vector format, utilizing a dark blue and light gray color palette, with a clean s-2](https://github.com/user-attachments/assets/3786fd45-fbd3-4a95-8b0f-a1721344a22c)
+![20250728_0722_Laravel Package Skeleton_remix_01k17qjddpffrb6heakatkwnn1](https://github.com/user-attachments/assets/b869522c-4e2e-4235-9714-eaa40fc60f83)
 
 <p align="center">
   <a href="https://github.com/marekmiklusek/package-skeleton/actions"><img src="https://github.com/marekmiklusek/package-skeleton/actions/workflows/ci.yaml/badge.svg" alt="CI Pipeline"></a>
