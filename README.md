@@ -16,7 +16,7 @@ A starting point for building Laravel packages, with testing, static analysis, r
 ## Features
 
 - 🧪 **Pest 5** with Testbench, arch tests and parallel execution
-- 📦 **`illuminate/support` only** — the skeleton does not force a framework version on consumers
+- 📦 **`illuminate/support` only**, so the skeleton does not force a framework version on consumers
 - 📊 **100% code coverage** and **100% type coverage** enforced
 - 🔍 **PHPStan (Larastan)** at level `max` over `src` and `tests`
 - 🔧 **Rector** automated refactoring and PHP version upgrades
@@ -52,7 +52,7 @@ match your package.
 | `composer test:lint` | Check code style and pending refactorings without writing files |
 | `composer lint` | Apply Rector refactorings and fix code style |
 
-Run `composer test` before pushing — it mirrors CI exactly.
+Run `composer test` before pushing. It mirrors CI exactly.
 
 ## What's Included
 
@@ -74,7 +74,7 @@ Run `composer test` before pushing — it mirrors CI exactly.
 
 ## Dependencies
 
-The package itself only requires `illuminate/support` — not the full framework.
+The package itself only requires `illuminate/support`, not the full framework.
 Add further `illuminate/*` components to `require` as your package needs them,
 and keep `orchestra/testbench` in `require-dev` for testing against a real
 Laravel application.
