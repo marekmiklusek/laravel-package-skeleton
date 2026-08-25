@@ -34,10 +34,10 @@ A starting point for building Laravel packages, with testing, static analysis, r
 Create a new Laravel package from this skeleton:
 
 ```bash
-composer create-project marekmiklusek/laravel-package-skeleton MyAwesomePackage
+composer create-project marekmiklusek/laravel-package-skeleton your-package-name
 ```
 
-This creates a `MyAwesomePackage` directory with all skeleton files. Then rename
+This creates a `your-package-name` directory with all skeleton files. Then rename
 the namespace, the service provider and the package name in `composer.json` to
 match your package.
 
