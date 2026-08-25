@@ -1,6 +1,6 @@
 {
     "name": "marekmiklusek/laravel-package-skeleton",
-    "description": "A skeleton for creating new Laravel packages.",
+    "description": "Laravel package skeleton with Pest, PHPStan, Rector and Pint wired up, and 100% coverage enforced in CI.",
     "keywords": [
         "laravel",
         "php",
