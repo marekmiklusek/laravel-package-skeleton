@@ -1,80 +1,88 @@
-![Create a logo for a PHP package skeleton_ a minimalist design, featuring a stylized skeletal structure representing a PHP file, rendered in vector format, utilizing a dark blue and light gray color palette, with a clean s-2](https://github.com/user-attachments/assets/3786fd45-fbd3-4a95-8b0f-a1721344a22c)
+<p align="center">
+  <img src="art/banner.svg" alt="Laravel Package Skeleton" width="100%">
+</p>
 
 <p align="center">
-  <a href="https://github.com/marekmiklusek/package-skeleton/actions"><img src="https://github.com/marekmiklusek/package-skeleton/actions/workflows/ci.yaml/badge.svg" alt="CI Pipeline"></a>
-  <a href="https://packagist.org/packages/marekmiklusek/package-skeleton"><img src="https://img.shields.io/packagist/v/marekmiklusek/package-skeleton.svg" alt="Latest Stable Version"></a>
-  <a href="https://packagist.org/packages/marekmiklusek/package-skeleton"><img src="https://img.shields.io/packagist/dt/marekmiklusek/package-skeleton.svg" alt="Downloads"></a>
-  <a href="https://github.com/marekmiklusek/package-skeleton/blob/main/LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+  <a href="https://github.com/marekmiklusek/laravel-package-skeleton/actions"><img src="https://github.com/marekmiklusek/laravel-package-skeleton/actions/workflows/tests.yml/badge.svg" alt="Tests"></a>
+  <a href="https://packagist.org/packages/marekmiklusek/laravel-package-skeleton"><img src="https://img.shields.io/packagist/v/marekmiklusek/laravel-package-skeleton.svg" alt="Latest Stable Version"></a>
+  <a href="https://packagist.org/packages/marekmiklusek/laravel-package-skeleton"><img src="https://img.shields.io/packagist/dt/marekmiklusek/laravel-package-skeleton.svg" alt="Downloads"></a>
+  <a href="https://github.com/marekmiklusek/laravel-package-skeleton/blob/main/LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
 </p>
 
 🏗️ **Modern Laravel package skeleton with development tools pre-configured.**
 
-This package provides a comprehensive starting point for creating Laravel packages with modern development tools already set up and configured.
+A starting point for building Laravel packages, with testing, static analysis, refactoring and code style already wired up and enforced in CI.
 
 ## Features
 
-- 🧪 **Pest** the Best PHP Testing Framework
-- 🔍 **PHPStan (Larastan)** static analysis for PHP/Laravel
-- 🔧 **Rector** automated code refactoring and upgrades
-- 📏 **Rector:dry-run** safe code refactoring
+- 🧪 **Pest 5** with Testbench, arch tests and parallel execution
+- 📦 **`illuminate/support` only** — the skeleton does not force a framework version on consumers
+- 📊 **100% code coverage** and **100% type coverage** enforced
+- 🔍 **PHPStan (Larastan)** at level `max` over `src` and `tests`
+- 🔧 **Rector** automated refactoring and PHP version upgrades
 - 🎨 **Laravel Pint** code formatting
-- 🚀 **GitHub Actions** CI/CD workflow
+- 🚀 **GitHub Actions** tests across PHP 8.4 / 8.5 and lowest / highest dependencies
+- 🤖 **Dependabot** for Composer and GitHub Actions updates
 
 ## Requirements
 
-- PHP 8.3+
-- Laravel 12.21+
+- PHP 8.4+
+- Laravel 13+
 
 ## Installation
 
-You can create a new Laravel package using this skeleton via composer:
+Create a new Laravel package from this skeleton:
 
 ```bash
-composer create-project marekmiklusek/package-skeleton --prefer-source MyAwesomePackage
+composer create-project marekmiklusek/laravel-package-skeleton MyAwesomePackage
 ```
 
-This will create a new directory `MyAwesomePackage` with all the skeleton files and proper namespacing configured for a Laravel package.
+This creates a `MyAwesomePackage` directory with all skeleton files. Then rename
+the namespace, the service provider and the package name in `composer.json` to
+match your package.
 
 ## Usage
 
-After creating your Laravel package, you can use these commands:
+| Command | What it does |
+| --- | --- |
+| `composer test` | Run every quality gate the CI pipeline runs |
+| `composer test:unit` | Run the test suite with exactly 100% code coverage |
+| `composer test:type-coverage` | Require 100% type coverage |
+| `composer test:types` | Run Larastan static analysis |
+| `composer test:lint` | Check code style and pending refactorings without writing files |
+| `composer lint` | Apply Rector refactorings and fix code style |
 
-Pest Testing:
-```bash
-composer test
-```
-
-PHPStan (Larastan) Static Analysis:
-```bash
-composer analyse
-```
-
-Laravel Pint Formatting:
-```bash
-composer format
-```
-
-Rector Refactoring:
-```bash
-composer refactor
-```
-
-Dry Run Refactoring (safe):
-```bash
-composer refactor:dry-run
-```
+Run `composer test` before pushing — it mirrors CI exactly.
 
 ## What's Included
 
-- **src/** - Your Laravel package source code
-- **src/PackageSkeletonServiceProvider.php** - Service provider for your Laravel package
-- **tests/ExampleTest.php** - Example test file
-- **composer.json** - Dependencies and scripts configured
-- **phpstan.neon** - Static analysis configuration
-- **rector.php** - Code refactoring rules
-- **pint.json** - Code style configuration
-- **.github/workflows/ci.yml** - GitHub Actions workflow
+| Path | Purpose |
+| --- | --- |
+| `src/` | Your package source code |
+| `src/PackageSkeletonServiceProvider.php` | The package service provider |
+| `tests/TestCase.php` | Testbench base test case registering the provider |
+| `tests/Pest.php` | Pest configuration binding Testbench to `Feature` only |
+| `tests/ArchTest.php` | Architecture rules (strict types, no debug calls) |
+| `tests/Feature/` | Feature tests booting a real Laravel application via Testbench |
+| `tests/Unit/` | Unit tests running without a framework instance |
+| `phpstan.neon` | Static analysis configuration |
+| `rector.php` | Refactoring rules |
+| `pint.json` | Code style configuration |
+| `phpunit.xml` | Test runner and coverage source configuration |
+| `.github/workflows/tests.yml` | GitHub Actions test pipeline |
+| `.github/dependabot.yml` | Dependency update automation |
+
+## Dependencies
+
+The package itself only requires `illuminate/support` — not the full framework.
+Add further `illuminate/*` components to `require` as your package needs them,
+and keep `orchestra/testbench` in `require-dev` for testing against a real
+Laravel application.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more
+The MIT License (MIT). See [LICENSE.md](LICENSE.md).

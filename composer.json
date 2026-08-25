@@ -1,7 +1,13 @@
 {
-    "name": "marekmiklusek/package-skeleton",
+    "name": "marekmiklusek/laravel-package-skeleton",
     "description": "A skeleton for creating new Laravel packages.",
-    "keywords": ["laravel", "php", "package", "skeleton", "laravel-package"],
+    "keywords": [
+        "laravel",
+        "php",
+        "package",
+        "skeleton",
+        "laravel-package"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -10,14 +16,18 @@
         }
     ],
     "require": {
-        "php": "^8.3.0",
-        "laravel/framework": "^12.21.0"
+        "php": "^8.4",
+        "illuminate/support": "^13.0"
     },
     "require-dev": {
-        "laravel/pint": "^1.24.0",
-        "larastan/larastan": "^3.6.0",
-        "rector/rector": "^2.1.2",
-        "pestphp/pest": "^3.8.2"
+        "larastan/larastan": "^3.10",
+        "laravel/pint": "^1.30",
+        "orchestra/testbench": "^11.2",
+        "pestphp/pest": "^5.1",
+        "pestphp/pest-plugin-laravel": "^5.0",
+        "pestphp/pest-plugin-phpstan": "^5.2",
+        "pestphp/pest-plugin-type-coverage": "^5.0",
+        "rector/rector": "^2.6"
     },
     "autoload": {
         "psr-4": {
@@ -36,7 +46,7 @@
             ]
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {
         "sort-packages": true,
@@ -45,12 +55,22 @@
         }
     },
     "scripts": {
-        "test": [
-            "./vendor/bin/pest"
+        "lint": [
+            "rector",
+            "pint --parallel"
         ],
-        "format": "./vendor/bin/pint",
-        "analyse": "./vendor/bin/phpstan analyse --memory-limit=1G",
-        "refactor": "./vendor/bin/rector",
-        "refactor:dry-run": "./vendor/bin/rector --dry-run"
+        "test:type-coverage": "pest --type-coverage --min=100",
+        "test:lint": [
+            "pint --parallel --test",
+            "rector --dry-run"
+        ],
+        "test:unit": "pest --parallel --coverage --exactly=100.0",
+        "test:types": "phpstan",
+        "test": [
+            "@test:type-coverage",
+            "@test:unit",
+            "@test:lint",
+            "@test:types"
+        ]
     }
 }

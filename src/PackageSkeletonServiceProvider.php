@@ -9,7 +9,7 @@ use Illuminate\Support\ServiceProvider;
 final class PackageSkeletonServiceProvider extends ServiceProvider
 {
     /**
-     * Register services.
+     * Register the package bindings.
      */
     public function register(): void
     {
@@ -17,7 +17,7 @@ final class PackageSkeletonServiceProvider extends ServiceProvider
     }
 
     /**
-     * Bootstrap services.
+     * Bootstrap the package.
      */
     public function boot(): void
     {

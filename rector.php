@@ -3,21 +3,21 @@
 declare(strict_types=1);
 
 use Rector\Config\RectorConfig;
-use Rector\Php83\Rector\ClassMethod\AddOverrideAttributeToOverriddenMethodsRector;
 
 return RectorConfig::configure()
     ->withPaths([
         __DIR__.'/src',
-    ])
-    ->withSkip([
-        AddOverrideAttributeToOverriddenMethodsRector::class,
+        __DIR__.'/tests',
     ])
     ->withPreparedSets(
         deadCode: true,
         codeQuality: true,
         typeDeclarations: true,
         privatization: true,
+        instanceOf: true,
         earlyReturn: true,
-        strictBooleans: true,
+        phpunitCodeQuality: true,
     )
-    ->withPhpSets();
+    ->withPhpSets()
+    ->withImportNames(removeUnusedImports: true)
+    ->withCache(__DIR__.'/.rector.cache');
