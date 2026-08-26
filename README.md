@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="art/banner.svg" alt="Laravel Package Skeleton" width="100%">
+  <img src="https://raw.githubusercontent.com/marekmiklusek/laravel-package-skeleton/main/art/banner.svg" alt="Laravel Package Skeleton" width="100%">
 </p>
 
 <p align="center">
