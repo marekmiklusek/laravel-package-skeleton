@@ -21,12 +21,12 @@ A starting point for building Laravel packages, with testing, static analysis, r
 - 🔍 **PHPStan (Larastan)** at level `max` over `src` and `tests`
 - 🔧 **Rector** automated refactoring and PHP version upgrades
 - 🎨 **Laravel Pint** code formatting
-- 🚀 **GitHub Actions** tests across PHP 8.4 / 8.5 and lowest / highest dependencies
+- 🚀 **GitHub Actions** tests on PHP 8.5 with lowest / highest dependencies
 - 🤖 **Dependabot** for Composer and GitHub Actions updates
 
 ## Requirements
 
-- PHP 8.4+
+- PHP 8.5+
 - Laravel 13+
 
 ## Installation
